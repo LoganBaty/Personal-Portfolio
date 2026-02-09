@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a style="font-family: 'Copperplate Gothic Bold', Fantasy" class="navbar-brand fs-1" href="/">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="logo" width="100" height="90" class="d-inline-block align-text-middle">
+            My Portfolio
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse me-5" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto fs-2">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link" href="/resume/">Resume</a>
+              <a class="nav-link" href="/portfolio/">Portfolio</a>
+              <a class="nav-link" href="/achievements/">Achievements</a>
+              <a class="nav-link" href="/contact/">Contact</a>
+          </div>
+        </div>
+          {% if user.is_authenticated %}
+              <div class="d-flex flex-column align-items-end justify-content-center ms-auto me-3 text-white">
+                <p class="mb-1 fs-5">Welcome, {{ user.username }}</p>
+                <form method="post" action="{% url 'logout' %}">
+                  {% csrf_token %}
+                  <button type="submit" class="btn btn-outline-light btn-sm">Logout</button>
+                </form>
+              </div>
+          {% else %}
+              <div class="ms-auto me-3">
+                <a class="btn btn-outline-light btn-sm" href="{% url 'login' %}">Login</a>
+              </div>
+          {% endif %}
+      </div>
+  </nav>
+  <body>
+    <h1 class="m-4 text-center fs-1 fw-bold">Welcome to my Portfolio!</h1>
+    <div class=" container">
+        <p class="text-center mx-auto" style="width: 50%;">
+            My name is Logan Baty. I currently am attending Weber State
+            University studying Computer Science. Within this online portfolio,
+            you can learn more about my hobbies, some of my computer science projects,
+            and my contact information. I hope you enjoy learning a little bit about me!
+            Thanks for visiting my portfolio!
+        </p>
+    </div>
+    <div class="text-center">
+        {% load static %}
+        <img src="{% static 'images/panamaMe.jpg' %}" alt="me" width="500" height="600" class="rounded mb-3">
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

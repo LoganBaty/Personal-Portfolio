@@ -1,0 +1,92 @@
+[
+  {
+    "model": "PortfolioDatabase.hobbies",
+    "pk": 1,
+    "fields": {
+      "hobby_title": "Snowboarding",
+      "hobby_desc": "Snowboarding is a winter sport in which you ride down a mountain on snow on a board with your feet strapped in. Snowboarding can be extreme in some cases, depending on the steepness of the mountain. Terrain parks, designated areas for ramps and rails, also add an element to the sport.",
+      "hobby_image": "https://images.unsplash.com/photo-1711751128991-e2c27a3f3da8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "hobby_paragraph": "Snowboarding is a thrilling winter sport that involves descending snow-covered slopes on a single board attached to the rider’s feet using specialized bindings. Unlike skiing, which uses two separate skis, snowboarding requires balance and coordination to maneuver the board by shifting body weight and using edge control. Riders can explore various styles, including freestyle (with tricks and jumps), alpine (focused on speed and carving), and backcountry (off-trail adventure). Originating in the 1960s and gaining popularity through the 1980s and 1990s, snowboarding has become a staple of winter sports culture and is featured in the Winter Olympics. It blends athleticism, creativity, and adrenaline in a way that appeals to both casual riders and competitive athletes."
+    }
+  },
+  {
+    "model": "PortfolioDatabase.hobbies",
+    "pk": 2,
+    "fields": {
+      "hobby_title": "Golf",
+      "hobby_desc": "Golf is a sport where you try to hit a ball into a hole in the fewest attempts possible. Courses are designed to make it difficult to do. Golf is a great outdoor activity that focuses on improving both physically and mentally.",
+      "hobby_image": "https://images.unsplash.com/photo-1494249120761-ea1225b46c05?q=80&w=1013&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "hobby_paragraph": "Golf is a precision sport played on expansive outdoor courses, where players aim to hit a small ball into a series of holes using as few strokes as possible. Each course typically features 18 holes, with varying layouts that include fairways, sand traps, water hazards, and greens. Players use different types of clubs—drivers, irons, wedges, and putters—depending on the distance and terrain. The game emphasizes strategy, technique, and mental focus, as players must account for factors like wind, slope, and grass conditions. Originating in Scotland in the 15th century, golf has evolved into a global pastime with professional tours, iconic tournaments like The Masters, and a rich culture of etiquette and tradition."
+    }
+  },
+  {
+    "model": "PortfolioDatabase.hobbies",
+    "pk": 3,
+    "fields": {
+      "hobby_title": "Piano",
+      "hobby_desc": "Piano is a beautiful instrument played on keys. Piano is technically a string instrument due to internal strings producing the sound when a key is pressed. ",
+      "hobby_image": "https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "hobby_paragraph": "The piano is a versatile and expressive musical instrument that produces sound by striking strings with hammers when keys are pressed. It features a keyboard with 88 black and white keys, allowing musicians to play a wide range of notes and dynamics. Known for its rich tonal quality and ability to convey emotion, the piano is used across genres—from classical and jazz to pop and film scores. Its design combines mechanical precision with artistic elegance, making it both a tool for composition and a centerpiece for performance. Whether played solo or as part of an ensemble, the piano offers endless possibilities for creativity and musical storytelling."
+    }
+  },
+  {
+    "model": "PortfolioDatabase.hobbies",
+    "pk": 4,
+    "fields": {
+      "hobby_title": "Fishing",
+      "hobby_desc": "Fishing is a wonderful outdoor activity that requires knowledge and patience. Using different types of rod, reel, and lure, fishing involves hooking and catching fish. The joy of fishing comes from feeling the fish fight on the other end of the line. Success while fishing depends on many factors, including equipment, location, and weather.",
+      "hobby_image": "https://images.unsplash.com/photo-1604336102823-1a4df72dfa26?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "hobby_paragraph": "Fishing is a timeless outdoor activity that involves catching fish from bodies of water such as rivers, lakes, or oceans using tools like rods, reels, nets, or even bare hands. It can be pursued as a relaxing hobby, a competitive sport, or a means of sustenance, with techniques ranging from fly fishing and trolling to deep-sea angling. Success often depends on understanding fish behavior, water conditions, and bait selection. Beyond the catch itself, fishing offers a chance to connect with nature, enjoy peaceful surroundings, and share stories with fellow anglers. Whether from a quiet dock or a rocking boat, fishing blends patience, skill, and a touch of luck."
+    }
+  },
+  {
+    "model": "PortfolioDatabase.portfolio",
+    "pk": 1,
+    "fields": {
+      "project_title": "Football Themed Math Game",
+      "project_desc": "A simple app designed for children. The app is has multiple football-themed windows that ask the player simple math questions. The user's score is totaled and displayed at the end.",
+      "project_image": "images/mathGame.png",
+      "project_paragraph": "The Football Themed Math Game is a c# project of mine. The app displays a menu for the user to enter their name, age, and type of math(addition, subtraction, multiplication, division). The user is then taken to a new window where random math questions are generated. As the user enters their answer, a response is displayed whether they answered correctly or not. After 10 questions, they are taken to a final screen with their score displayed. They can then replay the game, return to the main menu, or exit. This is a fun game with themed backgrounds and music."
+    }
+  },
+  {
+    "model": "PortfolioDatabase.portfolio",
+    "pk": 2,
+    "fields": {
+      "project_title": "Flight Reservation System",
+      "project_desc": "A c# program that allows a user to reserve a seat on multiple flight options using a graphical UI.",
+      "project_image": "images/flightReservationSystem.png",
+      "project_paragraph": "The Flight Reservation System app is a c# project allowing the user to select a flight from a list, select a passenger from a list, and then choose the seat for that passenger. A GUI is displayed of the seat layout for the different flights. The seats are highlighted in certain colors depending on the availability of the seat. The user also can select a seat from a list not using the GUI. "
+    }
+  },
+  {
+    "model": "PortfolioDatabase.portfolio",
+    "pk": 3,
+    "fields": {
+      "project_title": "Simple Calculator",
+      "project_desc": "A calculator which can compute basic operations, such as addition, subtraction, multiplication, and division. The program is run using c++.",
+      "project_image": "images/simpleCalculator.png",
+      "project_paragraph": "The Simple Calculator is a very basic console program. The user can enter two numbers and then choose the math they want to have done to the numbers, with their options being addition, subtraction, multiplication, and division. This is one of my very first programs I created. I like to see the progress made from this beginning program to now. "
+    }
+  },
+  {
+    "model": "PortfolioDatabase.portfolio",
+    "pk": 4,
+    "fields": {
+      "project_title": "Utah Ski Website",
+      "project_desc": "A website designed to offer information about skiing in Utah and provide links to other sites to purchase equipment. The site displays various resorts and information about those resorts.",
+      "project_image": "images/skiWebsite.png",
+      "project_paragraph": "The Utah Ski Website was designed by me to display all ski resorts in Utah. The website has multiple pages. The home page shows basic info about skiing in Utah, as well as a map with all resort locations. Another page displays each individual resort, where the user can click to display more information about each resort. Another page is dedicated to displaying ski and snowboarding gear, with links to other websites to purchase the gear. The last page is dedicated to the history of skiing and snowboarding in Utah. This website was a fun project for me to learn new html, css, and javascript skills."
+    }
+  },
+  {
+    "model": "PortfolioDatabase.portfolio",
+    "pk": 5,
+    "fields": {
+      "project_title": "Angular House App",
+      "project_desc": "A web-app made to display multiple homes. The user can learn more about each home and even fill out personal information to apply to own the home.",
+      "project_image": "images/houseApp.png",
+      "project_paragraph": "The House App was my first Angular project. I learned the basics of components within Angular to design a simple app displaying homes. The user can use a search bar to filter houses by location. The user can also click on a house to learn more, and even apply for the home. The user can enter their contact info, which is displayed before being prompted to go back to the home screen. This project helped me learn new concepts on my own without an instructor."
+    }
+  }
+]
