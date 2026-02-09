@@ -2,8 +2,10 @@ from django.shortcuts import render, get_object_or_404, redirect
 from PortfolioDatabase.models import Portfolio, Contact
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
-
 from PortfolioDatabase.contactForm import ContactModelForm, PortfolioForm
+from django.http import FileResponse
+import os
+from django.conf import settings
 
 
 def home(request):
@@ -11,6 +13,10 @@ def home(request):
 
 def resume(request):
     return render(request, 'PortfolioDatabase/resume.html', {})
+
+def download_resume(request):
+    filepath = os.path.join(settings.BASE_DIR, 'PortfolioDatabase/static/LoganBaty-Resume.pdf')
+    return FileResponse(open(filepath, 'rb'), as_attachment=True, filename='LoganBaty-Resume.pdf')
 
 def achievements(request):
     return render(request, 'PortfolioDatabase/achievements.html', {})

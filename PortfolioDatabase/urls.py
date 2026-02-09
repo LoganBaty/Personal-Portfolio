@@ -1,10 +1,12 @@
 from django.urls import path
 from django.contrib.auth import views as auth_views
 from . import views
+from .views import download_resume
 
 urlpatterns = [
     path("", views.home, name="home"),
     path("resume/", views.resume, name="resume"),
+    path('download-resume/', download_resume, name='download_resume'),
     path("achievements/", views.achievements, name="achievements"),
     path("portfolio/", views.portfolio, name="portfolio"),
     path("contact/", views.contact, name="contact"),
