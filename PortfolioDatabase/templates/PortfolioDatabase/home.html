@@ -45,16 +45,28 @@
         <p class="text-center mx-auto" style="width: 50%;">
             My name is Logan Baty. I currently am attending Weber State
             University studying Computer Science. Within this online portfolio,
-            you can learn more about my hobbies, some of my computer science projects,
-            and my contact information. I hope you enjoy learning a little bit about me!
+            you can see and download my resume, view some of my software projects and their code,
+            view some of my achievements, and see my contact information.
             Thanks for visiting my portfolio!
         </p>
     </div>
     <div class="text-center">
         {% load static %}
-        <img src="{% static 'images/panamaMe.jpg' %}" alt="me" width="500" height="600" class="rounded mb-3">
-    </div>
+        <img src="{% static 'images/meOutside.JPEG' %}" alt="me" width="500" height="600" class="rounded mb-3">
 
+        <div class="container text-center mb-5">
+            <h3 class="pb-4">Here are some quick links: </h3>
+            <a href="{% url 'download_resume' %}" class="btn btn-outline-dark me-5">
+                <i class="bi bi-file-earmark-pdf"></i> Download Resume
+            </a>
+
+            <a href="https://github.com/LoganBaty/Logan_Baty_Portfolio_Collection.git"
+                       class="btn btn-outline-dark"
+                       target="_blank">
+                        Visit GitHub Repository
+            </a>
+        </div>
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

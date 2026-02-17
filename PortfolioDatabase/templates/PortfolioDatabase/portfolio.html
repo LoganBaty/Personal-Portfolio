@@ -46,8 +46,25 @@
         <a class="btn btn-success" href="{% url 'add_project' %}">Add New Project</a>
       </div>
     {% endif %}
+    <div class="container">
+        <div class="col">
+            <div class="card shadow-sm my-4">
+                <div class="card-body">
+                    <h5 class="card-title">GitHub Link - See Project Code</h5>
+                    <p class="card-text">
+                        Explore the code for my projects and more on GitHub.
+                    </p>
+                    <a href="https://github.com/LoganBaty/Logan_Baty_Portfolio_Collection.git"
+                       class="btn btn-outline-secondary"
+                       target="_blank">
+                        Visit Repository
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
     {% if items %}
-        {% for item in items %}
+        {% for item in items reversed %}
             <div class="container">
                 <div class="col">
                     <div class="card">
