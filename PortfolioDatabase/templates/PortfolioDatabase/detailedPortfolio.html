@@ -44,7 +44,7 @@
         <h1 style="font-family: 'Monospaced', Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace" class="text-center fs-1 fw-bold">{{ item.title }}</h1><br>
         <div class="text-center">
             {% load static %}
-            <img src="{% static 'images/' %}{{ item.image }}" alt="{{ item.title }}" width="550" height="450" class="rounded mb-3">
+            <img src="{% static item.image %}" alt="{{ item.title }}" width="550" height="450" class="rounded mb-3">
         </div>
         <p>{{ item.paragraph }}</p>
         <a class="btn btn-outline-secondary btn-sm my-4" href="/portfolio/" role="button">Return to Hobbies</a>
